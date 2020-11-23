@@ -1,0 +1,33 @@
+{
+   "@context":"https://schema.org",
+   "@graph":[
+      {
+         "@type":"WebSite",
+         "@id":"https://underpost.net/",
+         "url":"https://underpost.net/",
+         "name":"UNDERpost.net",
+         "description":"",
+         "potentialAction":[
+            {
+               "@type":"SearchAction",
+               "target":"https://underpost.net/?s={search_term_string}",
+               "query-input":"required name=search_term_string"
+            }
+         ],
+         "inLanguage":"en"
+      },
+      {
+         "@type":"WebPage",
+         "@id":"https://underpost.net/",
+         "url":"https://underpost.net/",
+         "name":"UNDERpost.net",
+         "isPartOf":{
+            "@id":"https://underpost.net/"
+         },
+         "datePublished":"2019-02-14T15:28:33+00:00",
+         "dateModified":"2020-10-31T22:24:12+00:00",
+         "description":"Multi Platform Web Applications, HTML5 JavaScript and CSS gallery, Cyberpunk Counterculture Virtual World, and Web App Developer, the art of programming, by UNDER POST , underpost.net",
+         "inLanguage":"en"
+      }
+   ]
+}
