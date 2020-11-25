@@ -4,14 +4,12 @@ var mod_hall_play =  {
 
     console.log('init hall play');
 
-    let slider_cont = random(1, 85);
+    /*let slider_cont = random(1, 85);*/
+    let slider_cont = 35;
 
     append('body', `
 
     <div class='in slider-gif-content'>
-
-
-      <!-- 6 -->
 
       <img class='abs center img-slider' src='`+path+`/assets/fondos/`+slider_cont+`.gif'>
 
@@ -37,36 +35,15 @@ var mod_hall_play =  {
 
     </div>
 
-    <div class='in test'>
-
-    test
-
-    </div>
-
     `);
 
-    s('.arrow-content-c1').onclick = function(){
 
-      fadeOut(s('.img-slider'));
+    let animation = true;
 
-      setTimeout(function(){
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
 
-        slider_cont--;
-
-        if(slider_cont<1){
-
-          slider_cont = 85;
-
-        }
-
-        s('.img-slider').src = (path+'/assets/fondos/'+slider_cont+'.gif');
-        fadeIn(s('.img-slider'), 'block');
-
-      }, 300);
-
-    };
-
-    s('.arrow-content-c2').onclick = function(){
+    function sumSlider(){
 
       fadeOut(s('.img-slider'));
 
@@ -85,7 +62,58 @@ var mod_hall_play =  {
 
       }, 300);
 
+    }
+
+    function restSlider(){
+
+      fadeOut(s('.img-slider'));
+
+      setTimeout(function(){
+
+        slider_cont--;
+
+        if(slider_cont<1){
+
+          slider_cont = 85;
+
+        }
+
+        s('.img-slider').src = (path+'/assets/fondos/'+slider_cont+'.gif');
+        fadeIn(s('.img-slider'), 'block');
+
+      }, 300);
+
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+
+    s('.arrow-content-c1').onclick = function(){
+
+      animation = false;
+      restSlider();
+
     };
+
+    s('.arrow-content-c2').onclick = function(){
+
+      animation = false;
+      sumSlider();
+
+    };
+
+    /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+
+    setInterval(function(){
+
+      if(animation){
+
+        /*sumSlider();*/
+
+      }
+
+    }, 3000);
 
   }
 
