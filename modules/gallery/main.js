@@ -4,6 +4,8 @@ var mod_gallery = {
 
     console.log('init gallery');
 
+    s('.body_c1').style.background = 'red';
+
     mod_gallery.addApp('PATHFINDING ENGINE', 'underpost.net/pathfinding', 'app13');
 
     mod_gallery.addApp('CYBERIA ONLINE MMORPG', 'cyberiaonline.com', 'app12');
@@ -33,7 +35,7 @@ var mod_gallery = {
   },
   addApp: function(name, url, id){
 
-    append('.github-content', `
+    append('.body_c1', `
 
       <app itemscope itemtype="https://schema.org/WebApplication">
 

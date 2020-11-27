@@ -1,0 +1,60 @@
+
+
+.bar-sub-content {
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: .2s;
+  opacity: 0.8;
+
+}
+
+.bar-sub-content:hover {
+
+  opacity: 1;
+
+}
+
+
+.github-widget {
+
+  background: white;
+  width: 90%;
+  position: relative;
+  display: block;
+  margin: auto;
+
+}
+
+
+.img-git {
+
+  width: 200px;
+  margin: auto;
+  filter: invert(100%);
+  cursor: pointer;
+  transition: .2s;
+  opacity: 0.8;
+
+}
+
+.img-git:hover {
+
+  opacity: 1;
+
+}
+
+
+.link-bar {
+
+  color: white;
+  text-decoration: none;
+
+}
+
+.img-bar-link {
+
+  width: 50px;
+
+}

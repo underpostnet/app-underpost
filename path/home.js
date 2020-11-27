@@ -9,14 +9,19 @@ s('body').style.overflowY = 'auto';
 /* -------------------------------------------------------------------------- */
 
 
-
+mod_loader.init();
 mod_hall_play.init();
-mod_github.init();
+mod_body_c.init();
 mod_gallery.init();
+mod_credit.init();
+
+
 
 notclick('body', 0, false);
 notclick('body', 1, false);
 notclick('body', 2, false);
+
+
 
 
 
@@ -63,14 +68,14 @@ function rr(){
 
 		 if(data.lastW>930){
 
-			 s('.github-content').style.width = '70%';
-	 	 	 s('.credit-content').style.width = '30%';
+			 s('.body_c1').style.width = '70%';
+	 	 	 s('.body_c2').style.width = '30%';
 
 
 		 }else{
 
-			 s('.github-content').style.width = '100%';
-	 	 	 s('.credit-content').style.width = '100%';
+			 s('.body_c1').style.width = '100%';
+	 	 	 s('.body_c2').style.width = '100%';
 
 		 }
 
