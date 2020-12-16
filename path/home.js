@@ -13,6 +13,7 @@ mod_loader.init();
 mod_hall_play.init();
 mod_body_c.init();
 mod_gallery.init();
+mod_test.init();
 mod_credit.init();
 
 
