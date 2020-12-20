@@ -12,15 +12,17 @@ var mod_test = {
     append('body', `
 
 
-    <test class='in'>
+    <!-- <test class='in' style='display: block;'>
 
-      <br>
+      `+spr('TeSt<br>', 3)+`
 
-      test
+      `+tl(spr('TeSt<br>', 3))+`
 
-      <br>
+      `+tu(spr('TeSt<br>', 3))+`
 
-    </test>
+      `+cap(spr('TeSt  aSnYv<br> ', 3))+`
+
+    </test> -->
 
     `);
 

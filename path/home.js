@@ -18,9 +18,9 @@ mod_credit.init();
 
 
 
-notclick('body', 0, false);
+/* notclick('body', 0, false);
 notclick('body', 1, false);
-notclick('body', 2, false);
+notclick('body', 2, false); */
 
 
 
