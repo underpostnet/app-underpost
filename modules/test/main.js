@@ -27,7 +27,7 @@ var mod_test = {
 
 
 
-      <audio
+      <!-- <audio
 
       id="radio"
       class='fix'
@@ -41,7 +41,7 @@ var mod_test = {
 
       preload="none" controls>
 
-      </audio>
+      </audio> -->
 
 
 
