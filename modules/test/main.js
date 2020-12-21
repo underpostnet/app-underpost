@@ -24,7 +24,38 @@ var mod_test = {
 
     </test> -->
 
+
+
+
+      <audio
+
+      id="radio"
+      class='fix'
+      style='z-index: 800; bottom: 0px;'
+
+      src="`+
+
+      'https://www.cyberiaonline.com/stream?'+getHash()+'='
+
+      +`"
+
+      preload="none" controls>
+
+      </audio>
+
+
+
     `);
+
+    setTimeout(function(){
+
+      /* s('#radio').play().catch(error => {
+
+        console.log('error');
+
+      }); */
+
+    }, 500);
 
 
   }
