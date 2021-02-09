@@ -6,6 +6,8 @@ var mod_gallery = {
 
     s('.body_c1').style.background = 'red';
 
+    mod_gallery.addApp('3D PLOT DEMO', 'underpost.net/3dplotdemo', 'app14');
+
     mod_gallery.addApp('PATHFINDING ENGINE', 'underpost.net/pathfinding', 'app13');
 
     mod_gallery.addApp('CYBERIA ONLINE MMORPG', 'cyberiaonline.com', 'app12');
